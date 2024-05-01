@@ -7,7 +7,11 @@ const todos = [
 ];
 
 function getTodoTopics(todos) {
-  // Start coding here
+   let toDoDisplay = [];
+   todos.map((item) => {
+	toDoDisplay.push(item.topic);
+   });
+   console.log(toDoDisplay);
 }
 
 getTodoTopics(todos);

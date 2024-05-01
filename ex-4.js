@@ -7,7 +7,14 @@ const todos = [
 ];
 
 function getCompletedTodo(todos) {
-  // Start coding here
+  let toDoDisplay = todos.filter(checkCompleted);
+  console.log(toDoDisplay);
+}
+
+function checkCompleted(item) {
+  if(item.completed === true) {
+    return item;
+  }
 }
 
 getCompletedTodo(todos);
